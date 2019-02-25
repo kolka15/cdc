@@ -3892,6 +3892,9 @@ html {
   font-size: 66px;
   font-weight: 300;
   line-height: 1.09; }
+  @media screen and (max-width: 960px) {
+    .title-1 {
+      font-size: 60px; } }
 
 .button {
   border: 1px solid #00383c;
@@ -3902,13 +3905,16 @@ html {
   font-weight: 500;
   text-transform: uppercase;
   background: #fff;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   text-align: center; }
   .button:hover {
     color: #00383c;
     text-decoration: none; }
+  @media screen and (max-width: 576px) {
+    .button {
+      width: 250px; } }
   .button_dark {
     background: #00383c;
     color: #fff; }
@@ -4014,6 +4020,14 @@ body {
     margin-right: auto;
     padding-top: 145px;
     padding-bottom: 115px; }
+    @media screen and (max-width: 992px) {
+      .promo__block {
+        max-width: 98%;
+        padding-top: 110px;
+        padding-bottom: 70px; } }
+    @media screen and (max-width: 576px) {
+      .promo__block .title-1 {
+        font-size: 50px; } }
   .promo__title {
     margin-bottom: 78px;
     text-align: center; }
