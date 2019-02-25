@@ -39,6 +39,7 @@ const prodAssetsJs = `${prodAssets}/js`;
 const prodAssetsCss = `${prodAssets}/css`;
 const prodAssetsFonts = `${prodAssets}/fonts`;
 
+const githubProjectName = `cdc`
 
 const browsrSyncOpts = {
     https: false,
@@ -312,14 +313,14 @@ gulp.task('copy:docs', function () {
 
 gulp.task('replace_html:docs', function () {
     return gulp.src(`${docs}/*.html`)
-        .pipe(replace('/assets', '/docs/assets'))
+        .pipe(replace(`/assets`, `/${githubProjectName}/assets`))
         .pipe(gulp.dest(`${docs}`))
 });
 
 gulp.task('replace_css:docs', function () {
     return gulp.src(`${docs}/assets/css/*.css`)
-        .pipe(replace('/img', '/docs/img'))
-        .pipe(replace('/assets', '/docs/assets'))
+        .pipe(replace(`/img`, `/${githubProjectName}/img`))
+        .pipe(replace(`/assets`, `/${githubProjectName}/assets`))
         .pipe(gulp.dest(`${docs}/assets/css`))
 });
 
