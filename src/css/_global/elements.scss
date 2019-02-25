@@ -1,0 +1,32 @@
+.title-1 {
+  color: #000000;
+  font-size: 66px;
+  font-weight: 300;
+  line-height: 1.09;
+}
+
+.button {
+  border: 1px solid $cyprus;
+  width: 280px;
+  height: 60px;
+  color: $cyprus;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    color: $cyprus;
+    text-decoration: none;
+  }
+  &_dark {
+    background: $cyprus;
+    color: #fff;
+    &:hover {
+      background: $cyprus;
+      color: #fff;
+    }
+  }
+}

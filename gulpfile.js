@@ -325,8 +325,6 @@ gulp.task('replace_css:docs', function () {
         .pipe(gulp.dest(`${docs}/assets/css`))
 });
 
-
-
 gulp.task('docs',
     gulp.series('copy:docs', gulp.parallel('replace_html:docs', 'replace_css:docs'))
 );

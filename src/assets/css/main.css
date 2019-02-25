@@ -3889,6 +3889,34 @@ html {
   width: 99.118px;
   height: 88.087px; }
 
+.title-1 {
+  color: #000000;
+  font-size: 66px;
+  font-weight: 300;
+  line-height: 1.09; }
+
+.button {
+  border: 1px solid #00383c;
+  width: 280px;
+  height: 60px;
+  color: #00383c;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .button:hover {
+    color: #00383c;
+    text-decoration: none; }
+  .button_dark {
+    background: #00383c;
+    color: #fff; }
+    .button_dark:hover {
+      background: #00383c;
+      color: #fff; }
+
 body {
   font-family: "Futura PT", sans-serif;
   font-weight: 400;
@@ -3953,13 +3981,18 @@ body {
       text-decoration: none; }
 
 .promo {
-  background: #f4f5f5;
+  background: url("/img/raster/circle-lg.png") calc(-600px + 50%) -80% no-repeat, url("/img/raster/triangle-lg.png") calc(-260px + 50%) 130% no-repeat, url("/img/raster/square-lg.png") calc(880px + 50%) 30% no-repeat #f4f5f5;
   padding: 55px 0; }
   .promo__block {
     background: #fff;
     box-shadow: 0 10px 36px rgba(0, 0, 0, 0.07);
     max-width: 90%;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    padding-top: 145px;
+    padding-bottom: 115px; }
+  .promo__title {
+    margin-bottom: 78px;
+    text-align: center; }
 
 /*# sourceMappingURL=main.css.map */
