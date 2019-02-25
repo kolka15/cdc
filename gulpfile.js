@@ -169,12 +169,6 @@ gulp.task('img-min', function () {
         .pipe(gulp.dest(`${srcImg}`))
 });
 
-gulp.task('img:copy', function () {
-    return gulp.src(`${srcJS}entrance.js`)
-        .pipe(webpack(require('./gulp-webpack.dev.js')))
-        .pipe(gulp.dest(srcAssetsJs));
-});
-
 gulp.task('sprite', function () {
     return gulp.src(`${srcImg}/raster/sprite-smith/*.png`).pipe(spritesmith({
         imgName: 'sprite.png',
@@ -190,6 +184,12 @@ gulp.task('sprite', function () {
         .pipe(gulp.dest(`${srcImg}`));
 });
 
+gulp.task('img:copy', function () {
+    return gulp.src([`${srcImg}/**/*`, `!${srcImgVector}/symbol/**`, `!${srcImgVector}/css-sprite/**`, `!${srcImgRaster}/sprite-smith/**`])
+        .pipe(gulp.dest(prodImg))
+        .pipe(gulp.dest(`${docs}/img`))
+
+});
 
 /**
  *
@@ -351,7 +351,7 @@ gulp.task('go', function () {
  *
  * */
 
-gulp.task('default', gulp.series('clean', gulp.parallel(['pug', 'pug:prod', 'sass:prod', 'js:prod', 'copy:fonts']), 'docs'));
+gulp.task('default', gulp.series('clean', gulp.parallel(['pug', 'pug:prod', 'sass:prod', 'js:prod', 'copy:fonts', 'img:copy']), 'docs'));
 
 
 function swallowError(error) {
