@@ -21,7 +21,7 @@ const reload = browserSync.reload;
 
 
 const src = './src';
-const prod = './app';
+const prod = './docs';
 const srcJS = `${src}/js`;
 const srcCss = `${src}/css`;
 const srcImg = `${src}/img`
@@ -98,7 +98,7 @@ gulp.task('sass:prod', function () {
  * */
 
 gulp.task('js:dev', function () {
-    return gulp.src(`${srcJS}entrance.js`)
+    return gulp.src(`${srcJS}/entrance.js`)
         .pipe(webpack(require('./gulp-webpack.dev.js')))
         .pipe(gulp.dest(srcAssetsJs));
 });

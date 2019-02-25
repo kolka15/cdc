@@ -10820,6 +10820,61 @@ function importAll(r) {
 }
 
 importAll(__webpack_require__("./src/js/scripts sync recursive \\.js$"));
+importAll(__webpack_require__("./src/js/plugin-init sync recursive \\.js$"));
+
+/***/ }),
+
+/***/ "./src/js/plugin-init sync recursive \\.js$":
+/*!***************************************!*\
+  !*** ./src/js/plugin-init sync \.js$ ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./svg4every.js": "./src/js/plugin-init/svg4every.js"
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	var id = map[req];
+	if(!(id + 1)) { // check for number or string
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return id;
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "./src/js/plugin-init sync recursive \\.js$";
+
+/***/ }),
+
+/***/ "./src/js/plugin-init/svg4every.js":
+/*!*****************************************!*\
+  !*** ./src/js/plugin-init/svg4every.js ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _svg4everybody = __webpack_require__(/*! svg4everybody */ "./node_modules/svg4everybody/dist/svg4everybody.js");
+
+var _svg4everybody2 = _interopRequireDefault(_svg4everybody);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+(0, _svg4everybody2.default)();
 
 /***/ }),
 
@@ -10831,7 +10886,7 @@ importAll(__webpack_require__("./src/js/scripts sync recursive \\.js$"));
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./svg4every.js": "./src/js/scripts/svg4every.js"
+	"./anchor-smooth-scroll.js": "./src/js/scripts/anchor-smooth-scroll.js"
 };
 
 
@@ -10857,23 +10912,43 @@ webpackContext.id = "./src/js/scripts sync recursive \\.js$";
 
 /***/ }),
 
-/***/ "./src/js/scripts/svg4every.js":
-/*!*************************************!*\
-  !*** ./src/js/scripts/svg4every.js ***!
-  \*************************************/
+/***/ "./src/js/scripts/anchor-smooth-scroll.js":
+/*!************************************************!*\
+  !*** ./src/js/scripts/anchor-smooth-scroll.js ***!
+  \************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _svg4everybody = __webpack_require__(/*! svg4everybody */ "./node_modules/svg4everybody/dist/svg4everybody.js");
-
-var _svg4everybody2 = _interopRequireDefault(_svg4everybody);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-(0, _svg4everybody2.default)();
+$('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function (event) {
+    if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
+        // Figure out element to scroll to
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        // Does a scroll target exist?
+        if (target.length) {
+            // Only prevent default if animation is actually gonna happen
+            event.preventDefault();
+            $('html, body').animate({
+                scrollTop: target.offset().top
+            }, 500, function () {
+                // Callback after animation
+                // Must change focus!
+                var $target = $(target);
+                $target.focus();
+                if ($target.is(":focus")) {
+                    // Checking if the target was focused
+                    return false;
+                } else {
+                    $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                    $target.focus(); // Set focus again
+                }
+            });
+        }
+    }
+});
 
 /***/ }),
 
