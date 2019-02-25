@@ -5,7 +5,9 @@
   padding: 55px 0;
 
   &__block {
-    background: #fff;
+    background: url("/img/raster/square-md.png") 120% 70%  no-repeat,
+    url("/img/raster/triangle-md.png") 80% 10% no-repeat,
+    url("/img/raster/circle-md.png") -15% -50% no-repeat #fff;
     box-shadow: 0 10px 36px rgba(0, 0, 0, 0.07);
     max-width: 90%;
     margin-left: auto;

@@ -3904,7 +3904,8 @@ html {
   background: #fff;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  text-align: center; }
   .button:hover {
     color: #00383c;
     text-decoration: none; }
@@ -3982,7 +3983,7 @@ body {
   background: url("/img/raster/circle-lg.png") calc(-600px + 50%) -80% no-repeat, url("/img/raster/triangle-lg.png") calc(-260px + 50%) 130% no-repeat, url("/img/raster/square-lg.png") calc(880px + 50%) 30% no-repeat #f4f5f5;
   padding: 55px 0; }
   .promo__block {
-    background: #fff;
+    background: url("/img/raster/square-md.png") 120% 70% no-repeat, url("/img/raster/triangle-md.png") 80% 10% no-repeat, url("/img/raster/circle-md.png") -15% -50% no-repeat #fff;
     box-shadow: 0 10px 36px rgba(0, 0, 0, 0.07);
     max-width: 90%;
     margin-left: auto;
