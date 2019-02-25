@@ -314,6 +314,7 @@ gulp.task('copy:docs', function () {
 gulp.task('replace_html:docs', function () {
     return gulp.src(`${docs}/*.html`)
         .pipe(replace(`/assets`, `/${githubProjectName}/assets`))
+        .pipe(replace(`/img`, `/${githubProjectName}/img`))
         .pipe(gulp.dest(`${docs}`))
 });
 
