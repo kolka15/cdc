@@ -143,6 +143,7 @@ gulp.task('clean', function () {
     return del([`${prod}/**`, `${src}/*.html`]);
 });
 
+
 /**
  *
  * fonts copy
@@ -224,7 +225,7 @@ gulp.task('svg-sprite:css', function () {
             dest: '.',
             shape: {
                 spacing: {         // Add padding
-                    padding: 1
+                    padding: 2
                 }
             },
             mode: {
