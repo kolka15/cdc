@@ -1,3 +1,135 @@
+@font-face {
+  font-family: 'Futura PT';
+  src: url("/assets/fonts/futura-pt/FuturaPT-Light.eot");
+  src: url("/assets/fonts/futura-pt/FuturaPT-Light.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/futura-pt/FuturaPT-Light.woff") format("woff"), url("/assets/fonts/futura-pt/FuturaPT-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Futura PT';
+  src: url("/assets/fonts/futura-pt/FuturaPT-Book.eot");
+  src: url("/assets/fonts/futura-pt/FuturaPT-Book.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/futura-pt/FuturaPT-Book.woff") format("woff"), url("/assets/fonts/futura-pt/FuturaPT-Book.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Futura PT';
+  src: url("/assets/fonts/futura-pt/FuturaPT-Demi.eot");
+  src: url("/assets/fonts/futura-pt/FuturaPT-Demi.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/futura-pt/FuturaPT-Demi.woff") format("woff"), url("/assets/fonts/futura-pt/FuturaPT-Demi.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+
+.svg-perks-bag, .svg-perks-building, .svg-perks-hands, .svg-perks-hat {
+  background: url("/img/vector/sprite-css.svg") no-repeat; }
+
+.svg-perks-bag {
+  background-position: 99.85839275780103% 0; }
+
+.svg-perks-bag-dims {
+  width: 92.27px;
+  height: 90.75px; }
+
+.svg-perks-building {
+  background-position: 54.576687116564415% 0; }
+
+.svg-perks-building-dims {
+  width: 86.25px;
+  height: 97.75px; }
+
+.svg-perks-hands {
+  background-position: 0 100%; }
+
+.svg-perks-hands-dims {
+  width: 94.58px;
+  height: 100.5px; }
+
+.svg-perks-hat {
+  background-position: 0 0; }
+
+.svg-perks-hat-dims {
+  width: 111.2px;
+  height: 88.5px; }
+
+.svg-arrow-dims {
+  width: 175px;
+  height: 126.724px; }
+
+.svg-directions-chart-dims {
+  width: 74.644px;
+  height: 70.208px; }
+
+.svg-directions-finger-dims {
+  width: 72.537px;
+  height: 91px; }
+
+.svg-directions-letter-dims {
+  width: 86.27px;
+  height: 66.107px; }
+
+.svg-directions-monitor-dims {
+  width: 76px;
+  height: 71px; }
+
+.svg-directions-monitor-check-dims {
+  width: 88.65px;
+  height: 76.837px; }
+
+.svg-directions-settings-dims {
+  width: 79px;
+  height: 72px; }
+
+.svg-flag-sm-dims {
+  width: 18.508px;
+  height: 23.199px; }
+
+.svg-hamburger-dims {
+  width: 32px;
+  height: 18px; }
+
+.svg-location-dims {
+  width: 55.659px;
+  height: 91.335px; }
+
+.svg-mail-dims {
+  width: 78.036px;
+  height: 58.127px; }
+
+.svg-main-circle-dims {
+  width: 30px;
+  height: 30px; }
+
+.svg-main-square-dims {
+  width: 27px;
+  height: 27px; }
+
+.svg-main-triangle-dims {
+  width: 35.654px;
+  height: 27.855px; }
+
+.svg-mobile-phone-dims {
+  width: 62.7px;
+  height: 87.4px; }
+
+.svg-phone-dims {
+  width: 21px;
+  height: 21px; }
+
+.svg-tools-arrows-dims {
+  width: 171.41px;
+  height: 126px; }
+
+.svg-tools-hat-dims {
+  width: 85.127px;
+  height: 91.324px; }
+
+.svg-tools-ok-dims {
+  width: 86.178px;
+  height: 86.784px; }
+
+.svg-tools-settings-dims {
+  width: 99.118px;
+  height: 88.087px; }
+
 *,
 *::before,
 *::after {
@@ -3749,5 +3881,16 @@ html {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6; } }
+
+body {
+  font-family: "Futura PT", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+  background-color: #fff;
+  min-width: 320px; }
+
+.page-wrapper {
+  max-width: 1440px; }
 
 /*# sourceMappingURL=main.css.map */
