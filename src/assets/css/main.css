@@ -3751,23 +3751,20 @@ html {
     border-color: #dee2e6; } }
 
 @font-face {
-  font-family: 'Futura PT';
-  src: url("/assets/fonts/futura-pt/FuturaPT-Light.eot");
-  src: url("/assets/fonts/futura-pt/FuturaPT-Light.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/futura-pt/FuturaPT-Light.woff") format("woff"), url("/assets/fonts/futura-pt/FuturaPT-Light.ttf") format("truetype");
+  font-family: 'futura-pt';
+  src: url("/assets/fonts/futura-pt/FuturaPT-Light.woff2") format("woff2"), url("/assets/fonts/futura-pt/FuturaPT-Light.woff") format("woff"), url("/assets/fonts/futura-pt/FuturaPT-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Futura PT';
-  src: url("/assets/fonts/futura-pt/FuturaPT-Book.eot");
-  src: url("/assets/fonts/futura-pt/FuturaPT-Book.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/futura-pt/FuturaPT-Book.woff") format("woff"), url("/assets/fonts/futura-pt/FuturaPT-Book.ttf") format("truetype");
+  font-family: 'futura-pt';
+  src: url("/assets/fonts/futura-pt/FuturaPT-Book.woff2") format("woff2"), url("/assets/fonts/futura-pt/FuturaPT-Book.woff") format("woff"), url("/assets/fonts/futura-pt/FuturaPT-Book.ttf") format("truetype");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Futura PT';
-  src: url("/assets/fonts/futura-pt/FuturaPT-Demi.eot");
-  src: url("/assets/fonts/futura-pt/FuturaPT-Demi.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/futura-pt/FuturaPT-Demi.woff") format("woff"), url("/assets/fonts/futura-pt/FuturaPT-Demi.ttf") format("truetype");
+  font-family: 'futura-pt';
+  src: url("/assets/fonts/futura-pt/FuturaPT-Demi.woff2") format("woff2"), url("/assets/fonts/futura-pt/FuturaPT-Demi.woff") format("woff"), url("/assets/fonts/futura-pt/FuturaPT-Demi.ttf") format("truetype");
   font-weight: 500;
   font-style: normal; }
 
@@ -3890,6 +3887,7 @@ html {
   height: 88.087px; }
 
 .title-1 {
+  font-family: "futura-pt", sans-serif;
   color: #000000;
   font-size: 66px;
   font-weight: 300;
@@ -3918,7 +3916,7 @@ html {
       color: #fff; }
 
 body {
-  font-family: "Futura PT", sans-serif;
+  font-family: "futura-pt", sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: #000;
