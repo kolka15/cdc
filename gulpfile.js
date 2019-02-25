@@ -21,7 +21,8 @@ const reload = browserSync.reload;
 
 
 const src = './src';
-const prod = './docs';
+const prod = './dist';
+const docs = './docs';
 const srcJS = `${src}/js`;
 const srcCss = `${src}/css`;
 const srcImg = `${src}/img`
@@ -299,6 +300,39 @@ gulp.task('svg',
 
 /**
  *
+ * copy to docs
+ *
+ * */
+
+gulp.task('copy:docs', function () {
+    return gulp.src(`${prod}/**/*`)
+        .on('error', swallowError)
+        .pipe(gulp.dest('./docs'));
+});
+
+gulp.task('replace_html:docs', function () {
+    return gulp.src(`${docs}/*.html`)
+        .pipe(replace('/assets', '/docs/assets'))
+        .pipe(gulp.dest(`${docs}`))
+});
+
+gulp.task('replace_css:docs', function () {
+    return gulp.src(`${docs}/assets/css/*.css`)
+        .pipe(replace('/img', '/docs/img'))
+        .pipe(replace('/assets', '/docs/assets'))
+        .pipe(gulp.dest(`${docs}/assets/css`))
+});
+
+
+
+gulp.task('docs',
+    gulp.series('copy:docs', gulp.parallel('replace_html:docs', 'replace_css:docs'))
+);
+
+
+
+/**
+ *
  *  watcher
  *
  * */
@@ -317,7 +351,7 @@ gulp.task('go', function () {
  *
  * */
 
-gulp.task('default', gulp.series('clean', gulp.parallel(['pug', 'pug:prod', 'sass:prod', 'js:prod', 'copy:fonts'])));
+gulp.task('default', gulp.series('clean', gulp.parallel(['pug', 'pug:prod', 'sass:prod', 'js:prod', 'copy:fonts']), 'docs'));
 
 
 function swallowError(error) {

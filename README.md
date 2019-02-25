@@ -15,4 +15,4 @@ build:
 gulp
 ```
 
-Distribution folder `docs`
+Distribution folder `dist`
