@@ -1,11 +1,18 @@
 # gulp-template
 gulp template (webpack, es6, babel, sass, pug)
 
+Firtst run
+```JavaScript
+npm i
+```
+
 watch: 
 ```JavaScript
-npm run watch
+npm start
 ```
 build:
 ```JavaScript
-gulp build
+gulp
 ```
+
+Distribution folder `docs`
