@@ -1,0 +1,28 @@
+.perks {
+  padding-top: 100px;
+  padding-bottom: 130px;
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    width: 230px;
+  }
+  &__icon {
+    margin-bottom: 30px;
+  }
+  &__title {
+    color: #000000;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.1;
+    margin-bottom: 25px;
+  }
+  &__description {
+    color: #4c4c4c;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+}

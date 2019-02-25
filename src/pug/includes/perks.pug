@@ -1,0 +1,15 @@
+- var perks = []
+- perks.push({icon: 'svg-perks-hands svg-perks-hands-dims', title: 'Экспертиза в области ИТ',  descr: 'От 15 лет — опыт работы в российских и зарубежных ИТ-компаниях у экспертов агентства '})
+- perks.push({icon: 'svg-perks-building svg-perks-building-dims', title: '9 лет практикив госсекторе',  descr: '9 лет практики разработки ИТ-решений для государственных заказчиков'})
+- perks.push({icon: 'svg-perks-bag svg-perks-bag-dims', title: '20 федеральных проектов',  descr: 'Свыше 20 федеральных информационных систем создано при участии экспертов агентства'})
+- perks.push({icon: 'svg-perks-hat svg-perks-hat-dims', title: 'Ключевые компетенции',  descr: 'Ключевые компетенции в областях образования и цифровой экономики'})
+
+div.perks.page-wrapper
+    div.row
+        each perk in perks
+            div.col-0.col-xl-3.col-sm-6.mb-4.mb-xl-0.d-flex.justify-content-center
+                div.perks__item
+                    i.perks__icon(class=perk.icon)
+                    h4.perks__title= perk.title
+                    p.perks__description= perk.descr
+
