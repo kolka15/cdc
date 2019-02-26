@@ -1,0 +1,21 @@
+.js-ttabz-tab {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.js-ttabz-tabbed-block {
+  display: none;
+  &.js-ttabz-visible {
+    display: block;
+    animation: .2s tabbedBlockIn forwards;
+  }
+}
+
+@keyframes tabbedBlockIn {
+  0% {
+    opacity: 0;
+  }
+   100% {
+     opacity: 1;
+  }
+}

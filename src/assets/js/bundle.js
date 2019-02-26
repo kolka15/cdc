@@ -10963,18 +10963,18 @@ $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function (event) {
 "use strict";
 
 
-$('.ttabz-tab').on('click', function () {
+$('.js-ttabz-tab').on('click', function () {
    var $this = $(this);
-   if (!$this.hasClass('ttabz-active')) {
+   if (!$this.hasClass('js-ttabz-active')) {
 
-      var container = $this.closest('.ttabz');
-      var tabs = container.children('.ttabz-tabs-row').find('.ttabz-tab');
-      var tabbedBlocks = container.children('.ttabz-content').children('.ttabz-tabbed-block');
+      var container = $this.closest('.js-ttabz');
+      var tabs = container.children('.js-ttabz-tabs-row').find('.js-ttabz-tab');
+      var tabbedBlocks = container.children('.js-ttabz-content').children('.js-ttabz-tabbed-block');
       var tabIndex = tabs.index($this);
 
-      tabs.removeClass('ttabz-active');
-      $this.addClass('ttabz-active');
-      tabbedBlocks.removeClass('ttabz-visible').eq(tabIndex).addClass('ttabz-visible');
+      tabs.removeClass('js-ttabz-active');
+      $this.addClass('js-ttabz-active');
+      tabbedBlocks.removeClass('js-ttabz-visible').eq(tabIndex).addClass('js-ttabz-visible');
    }
 });
 
