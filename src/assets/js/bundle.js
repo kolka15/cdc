@@ -10886,7 +10886,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./anchor-smooth-scroll.js": "./src/js/scripts/anchor-smooth-scroll.js"
+	"./anchor-smooth-scroll.js": "./src/js/scripts/anchor-smooth-scroll.js",
+	"./tabs.js": "./src/js/scripts/tabs.js"
 };
 
 
@@ -10948,6 +10949,33 @@ $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function (event) {
             });
         }
     }
+});
+
+/***/ }),
+
+/***/ "./src/js/scripts/tabs.js":
+/*!********************************!*\
+  !*** ./src/js/scripts/tabs.js ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+$('.ttabz-tab').on('click', function () {
+   var $this = $(this);
+   if (!$this.hasClass('ttabz-active')) {
+
+      var container = $this.closest('.ttabz');
+      var tabs = container.children('.ttabz-tabs-row').find('.ttabz-tab');
+      var tabbedBlocks = container.children('.ttabz-content').children('.ttabz-tabbed-block');
+      var tabIndex = tabs.index($this);
+
+      tabs.removeClass('ttabz-active');
+      $this.addClass('ttabz-active');
+      tabbedBlocks.removeClass('ttabz-visible').eq(tabIndex).addClass('ttabz-visible');
+   }
 });
 
 /***/ }),

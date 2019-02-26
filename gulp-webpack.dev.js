@@ -12,11 +12,10 @@ module.exports = {
         library: "myLibrary",
         publicPath: '/assets/js/'
     },
-    //
-    // externals: {
-    //     $: "jquery",
-    //     jquery: "jQuery",
-    // },
+    externals: {
+        $: "jquery",
+        jquery: "jQuery",
+    },
     module: {
         rules: [
             {

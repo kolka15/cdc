@@ -24,6 +24,10 @@ let config = {
             }
         ]
     },
+    externals: {
+        $: "jquery",
+        jquery: "jQuery",
+    },
     plugins: [
         new UglifyJSPlugin({
             uglifyOptions: {

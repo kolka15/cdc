@@ -3895,6 +3895,8 @@ html {
   @media screen and (max-width: 960px) {
     .title-1 {
       font-size: 60px; } }
+  .title-1_white {
+    color: #fff; }
 
 .button {
   border: 1px solid #00383c;
@@ -3942,6 +3944,19 @@ body {
 .vendor {
   margin: auto; }
 
+.digital {
+  background: #00383c;
+  color: #fff;
+  padding-top: 10%; }
+  .digital__title {
+    margin-bottom: 25px; }
+  .digital__details {
+    color: #c0c0c0;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.08;
+    text-align: center; }
+
 .header {
   height: 90px;
   background: #fff;
@@ -3987,7 +4002,7 @@ body {
 
 .perks {
   padding-top: 100px;
-  padding-bottom: 130px; }
+  padding-bottom: 90px; }
   .perks__item {
     display: flex;
     flex-direction: column;
