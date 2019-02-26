@@ -2,9 +2,11 @@
   background: $cyprus;
   color: #fff;
   padding-top: 10%;
+
   &__title {
     margin-bottom: 25px;
   }
+
   &__details {
     color: #c0c0c0;
     font-size: 24px;
@@ -12,7 +14,29 @@
     line-height: 1.08;
     text-align: center;
   }
-  &__tabs-block {
 
+  &__tabs-block {
+    background: #f4f5f5;
+    color: #000;
+  }
+
+  &__tabs-row {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  &__tab {
+    height: 230px;
+    background-color: #f4f5f5;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 60px;
+    color: #616161;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.2;
   }
 }

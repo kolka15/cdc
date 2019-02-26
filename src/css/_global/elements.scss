@@ -41,3 +41,8 @@
     }
   }
 }
+
+.eagle {
+  @include retina-sprite($eagle-group);
+  display: inline-block;
+}

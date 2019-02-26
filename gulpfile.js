@@ -175,14 +175,14 @@ gulp.task('sprite', function () {
         imgName: 'sprite.png',
         cssName: './../../css/_global/_sprite.scss',
         padding: 20,
-        imgPath: '/img/rastr/sprite.png',
+        imgPath: '/img/raster/sprite.png',
         algorithm: 'binary-tree',
 
         retinaImgName: 'sprite2x.png',
-        retinaSrcFilter: './img/raster/sprite-smith/*@2x.png',
-        retinaImgPath: '/img/rastr/sprite2x.png'
+        retinaSrcFilter: `${srcImg}/raster/sprite-smith/*@2x.png`,
+        retinaImgPath: '/img/raster/sprite2x.png'
     }))
-        .pipe(gulp.dest(`${srcImg}`));
+        .pipe(gulp.dest(`${srcImg}/raster`));
 });
 
 gulp.task('img:copy', function () {
