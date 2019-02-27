@@ -1,0 +1,64 @@
+.directions {
+  background: $java;
+  padding: 130px 0;
+
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__grid {
+
+  }
+
+  &__blocks-upper {
+    .directions__grid {
+      &:nth-of-type(1) {
+        margin-bottom: 80px;
+      }
+
+      &:nth-of-type(2) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  &__blocks-lower {
+    .directions__grid {
+      &:nth-of-type(2) {
+        margin-top: 40px;
+      }
+
+      &:nth-of-type(3) {
+        margin-top: 80px;
+      }
+    }
+  }
+
+  &__block {
+    height: 300px;
+    background: #f4f4f4;
+    position: relative;
+    display: block;
+    &:hover {
+      text-decoration: none;
+      color: inherit;
+    }
+
+  }
+  &__icon-block {
+    width: 122px;
+    height: 122px;
+    margin:  0 auto;
+    background: #fff;
+    border-radius: 50%;
+    position: relative;
+    top: -27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: $cyprus;
+  }
+  &__block-name {
+
+  }
+}
