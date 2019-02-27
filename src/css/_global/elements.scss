@@ -31,6 +31,13 @@
   }
   @media screen and (max-width: 576px) {
     width: 250px;
+    font-size: 26px;
+    height: 80px;
+  }
+  &_mobile-full-width {
+    @media screen and (max-width: 576px) {
+      width: 100%;
+    }
   }
   &_dark {
     background: $cyprus;

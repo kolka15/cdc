@@ -10,7 +10,22 @@
 - digit_items.push({title:'Учитель будущего', img: ''})
 
 
-section.digital
+- var digit_items_2 = []
+- digit_items_2.push({title:'Успех каждого ребенка', img: ''})
+- digit_items_2.push({title:'Поддержка семей, имеющих детей', img: ''})
+- digit_items_2.push({title:'Молодые профессионалы', img: ''})
+- digit_items_2.push({title:'Цифровая образовательная среда', img: ''})
+- digit_items_2.push({title:'Современная школа', img: ''})
+- digit_items_2.push({title:'Новые возможности для каждого', img: ''})
+- digit_items_2.push({title:'Социальные лифты для каждого', img: ''})
+- digit_items_2.push({title:'Социальная активность', img: ''})
+- digit_items_2.push({title:'Учитель будущего', img: ''})
+
+
+
+
+
+section.digital#digital
     div.page-wrapper
         h2.title-1.title-1_white.text-center.digital__title Цифровые решения
         p.digital__details
@@ -18,7 +33,7 @@ section.digital
             | национальных программ и проектов
     div.digital__tabs-block-wrapper
         div.page-wrapper
-            div.digital__tabs-block.js-ttabz
+            div.digital__tabs-block.js-ttabz.mb-4
                 div.digital__tabs-row.js-ttabz-tabs-row
                     div.digital__tab.js-ttabz-tab.js-ttabz-active
                         div
@@ -29,11 +44,34 @@ section.digital
                             i.eagle
                         p.digital__tab-caption Национальный проект</br>«Образование»
                 div.digital__container.js-ttabz-content
+
                     div.digital__container-item.js-ttabz-tabbed-block.js-ttabz-visible
                         div.row.m-0.digital__grid-row
-                            each item in digit_items
-                                div.digital__grid.col-4= item.title
 
-                    div.digital__container-item.js-ttabz-tabbed-block xxxx
+                            each item, index in digit_items
+                                a.digital__grid.col-12.col-md-6.col-xl-4(href='#')
+                                    img.digital__pic(src='/img/raster/digital-pics/' + index + '.png')
+                                    div.ml-4
+                                        h4.digital__block-title= item.title
+                                        div.digital__hover-container
+                                            span.digital__hover-text Смотреть решения
+                                            <svg class="svg-arrow-dims digital__arrow">
+                                            <use xlink:href="/img/vector/sprite-symbol.svg#arrow"></use>
+                                            </svg>
 
+                    div.digital__container-item.js-ttabz-tabbed-block
+                        div.row.m-0.digital__grid-row
 
+                            each item, index in digit_items_2
+                                a.digital__grid.col.col-lg-6.col-xl-4(href='#')
+                                    img.digital__pic(src='/img/raster/digital-pics/' + index + '.png')
+                                    div.ml-4
+                                        h4.digital__block-title= item.title
+                                        div.digital__hover-container
+                                            span.digital__hover-text Смотреть решения
+                                            <svg class="svg-arrow-dims digital__arrow">
+                                            <use xlink:href="/img/vector/sprite-symbol.svg#arrow"></use>
+                                            </svg>
+
+            div.text-center
+                a.button.button_mobile-full-width.button_dark(href='#') скачать паспорт

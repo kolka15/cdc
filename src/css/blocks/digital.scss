@@ -19,6 +19,9 @@
   &__tabs-block-wrapper {
     background: #f4f5f5;
     padding-bottom: 150px;
+    @media screen and (max-width: 576px) {
+      padding-bottom: 50px;
+    }
   }
 
   &__tabs-block {
@@ -48,6 +51,12 @@
     margin-top: -130px;
     transition: all .2s;
     top: 0;
+    @media screen and (max-width: 576px) {
+      font-size: 17px;
+      padding-left: 10px;
+      justify-content: start;
+      padding-top: 20px;
+    }
 
     .eagle {
       opacity: 0.6;
@@ -88,5 +97,63 @@
     color: #000000;
     font-size: 24px;
     font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 3.5%;
+    transition: all .2s;
+    &:hover {
+      text-decoration: none;
+      background: #fff;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      z-index: 1;
+      position: relative;
+      .digital__hover-container {
+        opacity: 1;
+        visibility: visible;
+      }
+      .digital__arrow {
+        transform: translateX(0);
+      }
+      .digital__pic {
+        filter: none;
+      }
+    }
+
+  }
+  &__pic {
+    filter: grayscale(100%);
+    transition: all .3s;
+  }
+
+  &__block-title {
+    color: #000000;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    @media screen and (max-width: 576px) {
+      font-size: 20px;
+    }
+  }
+
+  &__hover-container {
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+  }
+
+  &__hover-text {
+    color: #f05547;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  &__arrow {
+    margin-left: auto;
+    margin-top: 2px;
+    transform: translateX(-100%);
+    transition: all .3s;
   }
 }
