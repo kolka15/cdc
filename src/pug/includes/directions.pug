@@ -1,28 +1,29 @@
 - var directions = []
 - directions.push({title:'Проектный офис / внешний монитор', icon: 'monitor'})
 - directions.push({title:'Аудит и мониторинг цифровой среды', icon: 'chart'})
-- directions.push({title:'Документирование проектов и работ', icon: 'scroll'})
+- directions.push({title:'Документирование проектови работ', icon: 'scroll'})
 - directions.push({title:'Аудит отчетной качественных материалов', icon: 'monitor-check'})
 - directions.push({title:'Разработка, поддержка и подбор кадров', icon: 'settings'})
-- directions.push({title:'Цифровой маркетинг', icon: 'finger'})
+- directions.push({title:'Цифровой маркетинг', icon: 'hand'})
 
 mixin card(title, icon)
-    div.col-4.directions__grid
+    div.col-12.col-sm-6.col-md-4.directions__grid
         a.directions__block(href='#')
             div.directions__icon-block
                 <svg class="svg-directions-#{icon}-dims">
                 <use xlink:href="/img/vector/sprite-symbol.svg#directions-#{icon}"></use>
                 </svg>
             h4.directions__block-name= title
-
+            div.directions__hover-caption-block
+                span.directions__hover-caption Подробнее
+                <svg class="svg-arrow-dims directions__arrow">
+                <use xlink:href="/img/vector/sprite-symbol.svg#arrow"></use>
+                </svg>
 
 section.directions#directions
     div.page-wrapper
         h2.title-1.title-1_white.directions__title.text-center Направления
         div.directions__blocks-wrapper
-            div.row.p-0.align-items-end.directions__blocks-upper
-                - for(var i = 0; i < 3; i++)
-                    +card(directions[i].title, directions[i].icon)
-            div.row.p-0.align-items-start.directions__blocks-lower
-                - for(var j = 2; j < 6; j++)
-                    +card(directions[j].title, directions[j].icon)
+            div.row.p-0.align-items-end
+                each direction in directions
+                    +card(direction.title, direction.icon)
