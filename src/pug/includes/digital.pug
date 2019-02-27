@@ -29,7 +29,7 @@ section.digital#digital
     div.page-wrapper
         h2.title-1.title-1_white.text-center.digital__title Цифровые решения
         p.digital__details
-            | Для проведения цифровой трансформации и достижения целевых показателей</br>
+            | Для проведения цифровой трансформации и достижения целевых показателей<br/>
             | национальных программ и проектов
     div.digital__tabs-block-wrapper
         div.page-wrapper
@@ -38,11 +38,11 @@ section.digital#digital
                     div.digital__tab.js-ttabz-tab.js-ttabz-active
                         div
                             i.eagle
-                        p.digital__tab-caption Национальный программа</br>«Цифровая экономика РФ»
+                        p.digital__tab-caption Национальный программа<br/>«Цифровая экономика РФ»
                     div.digital__tab.js-ttabz-tab
                         div
                             i.eagle
-                        p.digital__tab-caption Национальный проект</br>«Образование»
+                        p.digital__tab-caption Национальный проект<br/>«Образование»
                 div.digital__container.js-ttabz-content
 
                     div.digital__container-item.js-ttabz-tabbed-block.js-ttabz-visible
@@ -50,7 +50,7 @@ section.digital#digital
 
                             each item, index in digit_items
                                 a.digital__grid.col-12.col-md-6.col-xl-4(href='#')
-                                    img.digital__pic(src='/img/raster/digital-pics/' + index + '.png')
+                                    img.digital__pic(src='/img/raster/digital-pics/' + index + '.png', alt='digital')
                                     div.ml-4
                                         h4.digital__block-title= item.title
                                         div.digital__hover-container
@@ -64,7 +64,7 @@ section.digital#digital
 
                             each item, index in digit_items_2
                                 a.digital__grid.col.col-lg-6.col-xl-4(href='#')
-                                    img.digital__pic(src='/img/raster/digital-pics/' + index + '.png')
+                                    img.digital__pic(src='/img/raster/digital-pics/' + index + '.png', alt='digital')
                                     div.ml-4
                                         h4.digital__block-title= item.title
                                         div.digital__hover-container

@@ -3894,7 +3894,7 @@ html {
   line-height: 1.09; }
   @media screen and (max-width: 960px) {
     .title-1 {
-      font-size: 60px; } }
+      font-size: 55px; } }
   .title-1_white {
     color: #fff; }
 
@@ -4159,6 +4159,9 @@ body {
     @media screen and (max-width: 992px) {
       .directions__block-name {
         padding: 0 5%; } }
+    @media screen and (max-width: 575px) {
+      .directions__block-name {
+        font-size: 30px; } }
   .directions__hover-caption-block {
     text-align: center;
     opacity: 0;
