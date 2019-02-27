@@ -7,6 +7,7 @@
   @media screen and (max-width: 960px) {
     font-size: 55px;
   }
+
   &_white {
     color: #fff;
   }
@@ -25,23 +26,28 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+
   &:hover {
     color: $cyprus;
     text-decoration: none;
   }
+
   @media screen and (max-width: 576px) {
     width: 250px;
     font-size: 26px;
     height: 80px;
   }
+
   &_mobile-full-width {
     @media screen and (max-width: 576px) {
       width: 100%;
     }
   }
+
   &_dark {
     background: $cyprus;
     color: #fff;
+
     &:hover {
       background: $cyprus;
       color: #fff;
@@ -52,4 +58,20 @@
 .eagle {
   @include retina-sprite($eagle-group);
   display: inline-block;
+}
+
+
+.svg-mobile-phone-dims {
+  width: 24px;
+  height: 33px;
+}
+
+.svg-mail-dims {
+  width: 30px;
+  height: 22px;
+}
+
+.svg-location-dims {
+  width: 21px;
+  height: 34px;
 }

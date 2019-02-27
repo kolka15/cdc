@@ -3846,9 +3846,13 @@ html {
   width: 55.659px;
   height: 91.335px; }
 
+.svg-logo-monocolor-dims {
+  width: 146.532px;
+  height: 44.931px; }
+
 .svg-mail-dims {
-  width: 78.036px;
-  height: 58.127px; }
+  width: 76.036px;
+  height: 56.127px; }
 
 .svg-main-circle-dims {
   width: 30px;
@@ -3939,6 +3943,18 @@ html {
     .eagle {
       background-image: url(/img/raster/sprite2x.png);
       background-size: 56px 58px; } }
+
+.svg-mobile-phone-dims {
+  width: 24px;
+  height: 33px; }
+
+.svg-mail-dims {
+  width: 30px;
+  height: 22px; }
+
+.svg-location-dims {
+  width: 21px;
+  height: 34px; }
 
 body {
   font-family: "futura-pt", sans-serif;
@@ -4175,6 +4191,47 @@ body {
   .directions__arrow {
     transform: translateX(-20px);
     transition: all .3s; }
+
+.footer {
+  background: #00383c; }
+  .footer__upper-row {
+    border-bottom: 1px solid #505050; }
+  .footer__upper-row-item {
+    height: 140px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1;
+    fill: #8f8f8f; }
+  .footer__upper-row-text {
+    color: inherit;
+    margin-left: 15px; }
+    .footer__upper-row-text:hover {
+      color: #fff; }
+    a.footer__upper-row-text:hover {
+      text-decoration: underline; }
+  .footer__main {
+    padding: 50px 0; }
+  .footer__main-link {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 35px;
+    display: inline-block; }
+    .footer__main-link:hover {
+      color: #fff; }
+  .footer__seconfary-link {
+    color: #b7b7b7;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-bottom: 20px;
+    display: inline-block; }
+    .footer__seconfary-link:hover {
+      color: #b7b7b7; }
 
 .header {
   height: 90px;
