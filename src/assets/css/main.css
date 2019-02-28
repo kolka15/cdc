@@ -4261,6 +4261,11 @@ body {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.25; }
+  .footer__socail-block {
+    margin-left: auto; }
+  .footer__social-link {
+    fill: #fff;
+    margin-left: 40px; }
 
 .header {
   height: 90px;
