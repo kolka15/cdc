@@ -1,6 +1,10 @@
 .footer {
   &__upper-row {
     border-bottom: 1px solid #505050;
+    @media screen and (max-width: 767px) {
+      height: auto;
+      padding: 50px 0 10px;
+    }
   }
 
   background: $cyprus;
@@ -14,6 +18,10 @@
     font-weight: 500;
     line-height: 1;
     fill: #8f8f8f;
+    @media screen and (max-width: 767px) {
+      height: auto;
+      margin-bottom: 40px;
+    }
   }
 
   &__upper-row-text {
@@ -72,11 +80,18 @@
     height: 150px;
     display: flex;
     align-items: center;
+    @media screen and (max-width: 991px) {
+      flex-direction: column;
+      height: auto;
+    }
   }
 
   &__logo {
     fill: #fff;
     margin-right: 200px;
+    @media screen and (max-width: 991px) {
+      margin-right: 0;
+    }
   }
 
   &__copyright {
@@ -86,8 +101,11 @@
     line-height: 1.25;
   }
 
-  &__socail-block {
+  &__social-block {
     margin-left: auto;
+    @media screen and (max-width: 991px) {
+      margin-left: 0;
+    }
   }
   &__social-link {
     fill: #fff;

@@ -44,19 +44,19 @@ mixin linksList(title, link, isMain)
 footer.footer
     div.footer__upper-row
         div.page-wrapper.row.p-0
-            div.col-3
+            div.col-12.col-md-3
                 div.footer__upper-row-item
                     <svg class="svg-mobile-phone-dims">
                     <use xlink:href="/img/vector/sprite-symbol.svg#mobile-phone"></use>
                     </svg>
                     a.footer__upper-row-text(href='tel:+792343243235') +7 (923) 432 432 35
-            div.col-3
+            div.col-12.col-md-3
                 div.footer__upper-row-item
                     <svg class="svg-mail-dims">
                     <use xlink:href="/img/vector/sprite-symbol.svg#mail"></use>
                     </svg>
                     a.footer__upper-row-text(href='mailto:ask@agency.ru') ask@agency.ru
-            div.col-6
+            div.col-md-6.col-12
                 div.footer__upper-row-item
                     <svg class="svg-location-dims">
                     <use xlink:href="/img/vector/sprite-symbol.svg#location"></use>
@@ -65,29 +65,29 @@ footer.footer
     div.footer__main
         div.page-wrapper
             div.row.p-0
-                div.col.col-xl-3
+                div.col-12.col-md-3.mb-5.mb-md-0
                     each link in col1
                         +linksList(link.title, link.link, link.isMain)
-                div.col-3
+                div.col-12.col-md-3.mb-5.mb-md-0
                     each link in col2
                         +linksList(link.title, link.link, link.isMain)
-                div.col-3
+                div.col-12.col-md-3.mb-5.mb-md-0
                     each link in col3
                         +linksList(link.title, link.link, link.isMain)
-                div.col-3.pl-5
-                    div.ml-5
+                div.col-12.col-md-3.pl-3.pl-md-5
+                    div.ml-0.ml-md-5
                         each link in col4
                             +linksList(link.title, link.link, link.isMain)
 
     div.footer__lower-row
         div.page-wrapper
-            div.footer__lower-row-container
-                a(href='/')
+            div.footer__lower-row-container.py-5.py-lg-0
+                a(href='/').pb-5.pb-lg-0
                     <svg class="svg-logo-monocolor-dims footer__logo">
                     <use xlink:href="/img/vector/sprite-symbol.svg#logo-monocolor"></use>
                     </svg>
-                span.footer__copyright © 2019 Агентство цифровой трансформации
-                div.footer__socail-block
+                span.footer__copyright.pb-5.pb-lg-0 © 2019 Агентство цифровой трансформации
+                div.footer__social-block
                     a.footer__social-link(href='#')
                         <svg class="svg-soc-fb-dims">
                         <use xlink:href="/img/vector/sprite-symbol.svg#soc-fb"></use>
