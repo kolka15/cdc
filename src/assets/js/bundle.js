@@ -19628,6 +19628,7 @@ var swiper1 = new _swiper2.default('.js-swiper-type-1', {
 
 var map = {
 	"./anchor-smooth-scroll.js": "./src/js/scripts/anchor-smooth-scroll.js",
+	"./overlay-menu.js": "./src/js/scripts/overlay-menu.js",
 	"./tabs.js": "./src/js/scripts/tabs.js"
 };
 
@@ -19694,6 +19695,55 @@ $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function (event) {
 
 /***/ }),
 
+/***/ "./src/js/scripts/overlay-menu.js":
+/*!****************************************!*\
+  !*** ./src/js/scripts/overlay-menu.js ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _scrollWidth = __webpack_require__(/*! ../vendor/scroll-width */ "./src/js/vendor/scroll-width.js");
+
+var _scrollWidth2 = _interopRequireDefault(_scrollWidth);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var openMenu = $('.js-open-menu');
+var body = $('body');
+
+openMenu.on('click', function () {
+    var el = $(this);
+    var overlayMenuClass = el.data('open');
+    var overlayMenu = $('.' + overlayMenuClass);
+    var close = overlayMenu.find('.js-overlay-close');
+
+    body.css({ overflow: 'hidden', paddingRight: (0, _scrollWidth2.default)() + 'px' });
+
+    overlayMenu.addClass('active');
+
+    $(document).off('keydown.hideOverlay').on('keydown.hideOverlay', function (event) {
+        if (openMenu.length) {
+            if (event.keyCode === 27) {
+                closeOverlay();
+            }
+        }
+    });
+
+    close.off('click.closeOverlay').on('click.closeOverlay', function () {
+        closeOverlay();
+    });
+
+    function closeOverlay() {
+        body.css({ overflow: 'auto', paddingRight: '0' });
+        overlayMenu.removeClass('active');
+    }
+});
+
+/***/ }),
+
 /***/ "./src/js/scripts/tabs.js":
 /*!********************************!*\
   !*** ./src/js/scripts/tabs.js ***!
@@ -19718,6 +19768,47 @@ $('.js-ttabz-tab').on('click', function () {
       tabbedBlocks.removeClass('js-ttabz-visible').eq(tabIndex).addClass('js-ttabz-visible');
    }
 });
+
+/***/ }),
+
+/***/ "./src/js/vendor/scroll-width.js":
+/*!***************************************!*\
+  !*** ./src/js/vendor/scroll-width.js ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = getScrollbarWidth;
+function getScrollbarWidth() {
+    var outer = document.createElement("div");
+    outer.style.visibility = "hidden";
+    outer.style.width = "100px";
+    outer.style.msOverflowStyle = "scrollbar"; // needed for WinJS apps
+
+    document.body.appendChild(outer);
+
+    var widthNoScroll = outer.offsetWidth;
+    // force scrollbars
+    outer.style.overflow = "scroll";
+
+    // add innerdiv
+    var inner = document.createElement("div");
+    inner.style.width = "100%";
+    outer.appendChild(inner);
+
+    var widthWithScroll = inner.offsetWidth;
+
+    // remove divs
+    outer.parentNode.removeChild(outer);
+
+    return widthNoScroll - widthWithScroll;
+}
 
 /***/ }),
 

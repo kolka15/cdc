@@ -37,7 +37,7 @@
 </svg>Технологии</a></div>
         <div class="header__right-block"><a class="header__call" href="tel:+79109999999"><svg class="svg-phone-dims">
 <use xlink:href="/cdc/img/vector/sprite-symbol.svg#phone"></use>
-</svg></a><span class="header__hamburger"><svg class="svg-hamburger-dims">
+</svg></a><span class="header__hamburger js-open-menu" data-open="overlay-nav"><svg class="svg-hamburger-dims">
 <use xlink:href="/cdc/img/vector/sprite-symbol.svg#hamburger"></use>
 </svg></span></div>
       </div>
@@ -558,19 +558,42 @@
           <div class="footer__lower-row-container py-5 py-lg-0"><a class="pb-5 pb-lg-0" href="/"><svg class="svg-logo-monocolor-dims footer__logo">
 <use xlink:href="/cdc/img/vector/sprite-symbol.svg#logo-monocolor"></use>
 </svg></a><span class="footer__copyright pb-5 pb-lg-0">© 2019 Агентство цифровой трансформации</span>
-            <div class="footer__social-block"><a class="footer__social-link" href="#"><svg class="svg-soc-fb-dims">
+            <div class="social-block"><a class="social-block__social-link" href="#"><svg class="svg-soc-fb-dims">
 <use xlink:href="/cdc/img/vector/sprite-symbol.svg#soc-fb"></use>
-</svg></a><a class="footer__social-link" href="#"><svg class="svg-soc-tw-dims">
+</svg></a><a class="social-block__social-link" href="#"><svg class="svg-soc-tw-dims">
 <use xlink:href="/cdc/img/vector/sprite-symbol.svg#soc-tw"></use>
-</svg></a><a class="footer__social-link" href="#"><svg class="svg-soc-vk-dims">
+</svg></a><a class="social-block__social-link" href="#"><svg class="svg-soc-vk-dims">
 <use xlink:href="/cdc/img/vector/sprite-symbol.svg#soc-vk"></use>
-</svg></a><a class="footer__social-link" href="#"><svg class="svg-soc-in-dims">
+</svg></a><a class="social-block__social-link" href="#"><svg class="svg-soc-in-dims">
 <use xlink:href="/cdc/img/vector/sprite-symbol.svg#soc-in"></use>
 </svg></a></div>
           </div>
         </div>
       </div>
     </footer>
+    <div class="overlay-nav">
+      <div class="page-wrapper page-wrapper_sm position-relative">
+        <div class="js-overlay-close overlay-close"><svg class="svg-close-cross-dims">
+<use xlink:href="/cdc/img/vector/sprite-symbol.svg#close-cross"></use>
+</svg>
+        </div>
+        <div class="row p-0">
+          <div class="col-6">
+            <nav class="overlay-navigation">
+              <div class="overlay-navigation__row"><a class="overlay-navigation__link" href="#">Цифровые решения</a></div>
+              <div class="overlay-navigation__row"><a class="overlay-navigation__link" href="#">Направления</a></div>
+              <div class="overlay-navigation__row"><a class="overlay-navigation__link" href="#">Инструменты</a></div>
+              <div class="overlay-navigation__row"><a class="overlay-navigation__link" href="#">Проектный портфель</a></div>
+              <div class="overlay-navigation__row"><a class="overlay-navigation__link" href="#">Агентство</a></div>
+              <div class="overlay-navigation__row"><a class="overlay-navigation__link" href="#">Новости</a></div>
+            </nav>
+          </div>
+          <div class="col-6">
+            <div class="mb-5"></div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script> window.jQuery || document.write('<script src="/cdc/assets/js/jquery-3.3.1.min.js"><\/script>')</script>
     <script src="/cdc/assets/js/bundle.js"></script>

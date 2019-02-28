@@ -13,6 +13,9 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding: 0 15px;
+  &_sm {
+    max-width: 1024px;
+  }
 }
 
 [class*=svg-] {
