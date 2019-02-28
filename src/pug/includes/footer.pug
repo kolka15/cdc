@@ -1,5 +1,45 @@
+- var col1 = []
+- col1.push({title:'Цифровые решения', isMain: true, link:'#'})
+- col1.push({title:'Современная школа', link:'#'})
+- col1.push({title:'Успех каждого ребенка', link:'#'})
+- col1.push({title:'Поддержка семей, имеющих детей', link:'#'})
+- col1.push({title:'Цифровая образовательная среда', link:'#'})
+- col1.push({title:'Молодые профессионалы', link:'#'})
+- col1.push({title:'Социальная активность', link:'#'})
+- col1.push({title:'Социальные лифты для каждого', link:'#'})
+- col1.push({title:'Новые возможности для каждого', link:'#'})
+- col1.push({title:'Учитель будущего', link:'#'})
 
+- var col2 = []
+- col2.push({title:'Направления', isMain: true, link:'#'})
+- col2.push({title:'Проектный офис / внешний монитор', link:'#'})
+- col2.push({title:'Аудит и мониторинг ведомственной цифровой среды', link:'#'})
+- col2.push({title:'Документирование и контроль реализации проектов и работ', link:'#'})
+- col2.push({title:'Разработка, поддержка и развитие ПО. Внедрение и подбор кадров', link:'#'})
+- col2.push({title:'Цифровой маркетинг', link:'#'})
 
+- var col3 = []
+- col3.push({title:'Проектный портфель', isMain: true, link:'#'})
+- col3.push({title:'Обеспечение взаимодействия школьных библиотек и федеральных хранилищ', link:'#'})
+- col3.push({title:'Государственный мониторинг общеобразовательных организаций', link:'#'})
+- col3.push({title:'Обеспечение взаимодействия школьных библиотек и федеральных хранилищ', link:'#'})
+- col3.push({title:'Государственный мониторинг общеобразовательных организаций', link:'#'})
+- col3.push({title:'Обеспечение взаимодействия школьных библиотек и федеральных хранилищ', link:'#'})
+- col3.push({title:'Государственный мониторинг общеобразовательных организаций', link:'#'})
+- col3.push({title:'Обеспечение взаимодействия школьных библиотек и федеральных хранилищ', link:'#'})
+- col3.push({title:'Государственный мониторинг общеобразовательных организаций', link:'#'})
+
+- var col4 = []
+- col4.push({title:'Агентство', isMain: true, link:'#'})
+- col4.push({title:'Новости', isMain: true, link:'#'})
+- col4.push({title:'Контакты', isMain: true, link:'#'})
+
+mixin linksList(title, link, isMain)
+    div
+        if isMain
+            a.footer__main-link(href='#{link}')= title
+        else
+            a.footer__seconfary-link(href='#{link}')= title
 
 footer.footer
     div.footer__upper-row
@@ -26,23 +66,44 @@ footer.footer
         div.page-wrapper
             div.row.p-0
                 div.col-3
-                    div
-                        a.footer__main-link(href='#') Цифровые решения
-                    div
-                        a.footer__seconfary-link(href='#') Современная школа
-                    div
-                        a.footer__seconfary-link(href='#') Успех каждого ребенка
-                    div
-                        a.footer__seconfary-link(href='#') Поддержка семей, имеющих детей
-                    div
-                        a.footer__seconfary-link(href='#') Цифровая образовательная среда
-                    div
-                        a.footer__seconfary-link(href='#') Молодые профессионалы
-                    div
-                        a.footer__seconfary-link(href='#') Социальная активность
-                    div
-                        a.footer__seconfary-link(href='#') Социальные лифты для каждого
-                    div
-                        a.footer__seconfary-link(href='#') Новые возможности для каждого
-                    div
-                        a.footer__seconfary-link(href='#') Учитель будущего
+                    each link in col1
+                        +linksList(link.title, link.link, link.isMain)
+                div.col-3
+                    each link in col2
+                        +linksList(link.title, link.link, link.isMain)
+                div.col-3
+                    each link in col3
+                        +linksList(link.title, link.link, link.isMain)
+                div.col-3.pl-5
+                    div.ml-5
+                        each link in col4
+                            +linksList(link.title, link.link, link.isMain)
+
+    div.footer__lower-row
+        div.page-wrapper
+            div.footer__lower-row-container
+                a(href='/')
+                    <svg class="svg-logo-monocolor-dims footer__logo">
+                    <use xlink:href="/img/vector/sprite-symbol.svg#logo-monocolor"></use>
+                    </svg>
+                span.footer__copyright © 2019 Агентство цифровой трансформации
+                div.footer__socail-block
+                    a(href='#')
+                        <svg class="svg-soc-fb-dims">
+                        <use xlink:href="/img/vector/sprite-symbol.svg#soc-fb"></use>
+                        </svg>
+                    a(href='#')
+                        <svg class="svg-soc-tw-dims">
+                        <use xlink:href="/img/vector/sprite-symbol.svg#soc-fb"></use>
+                        </svg>
+                    a(href='#')
+                        <svg class="svg-soc-vk-dims">
+                        <use xlink:href="/img/vector/sprite-symbol.svg#soc-fb"></use>
+                        </svg>
+                    a(href='#')
+                        <svg class="svg-soc-in-dims">
+                        <use xlink:href="/img/vector/sprite-symbol.svg#soc-fb"></use>
+                        </svg>
+
+
+

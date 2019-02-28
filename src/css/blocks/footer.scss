@@ -32,8 +32,10 @@
       }
     }
   }
+
   &__main {
     padding: 50px 0;
+    border-bottom: 1px solid #505050;
   }
 
   &__main-link {
@@ -43,20 +45,48 @@
     line-height: 1;
     margin-bottom: 35px;
     display: inline-block;
+
     &:hover {
       color: #fff;
     }
   }
-  &__seconfary-link{
+
+  &__seconfary-link {
     color: #b7b7b7;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.25;
     margin-bottom: 20px;
     display: inline-block;
+
     &:hover {
       color: #b7b7b7;
     }
   }
 
+  &__lower-row {
+
+  }
+
+  &__lower-row-container {
+    height: 150px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    fill: #fff;
+    margin-right: 200px;
+  }
+
+  &__copyright {
+    color: #989898;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+  }
+
+  &__socail-block {
+
+  }
 }
