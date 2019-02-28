@@ -4957,6 +4957,9 @@ button.swiper-pagination-bullet {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.25; }
+    @media screen and (max-width: 991px) {
+      .footer__copyright {
+        text-align: center; } }
   .footer__social-block {
     margin-left: auto; }
     @media screen and (max-width: 991px) {
