@@ -1,0 +1,41 @@
+.instruments {
+  padding-top: 130px;
+  background: #efefef;
+  &__side-img {
+    max-width: 100%;
+  }
+  &__slide-extra-gap {
+    padding-bottom: 80px;
+    padding-right: 10%;
+    font-size: 0;
+    @media screen and (max-width: 1199px) {
+      padding-right: 0;
+    }
+
+  }
+
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__item {
+    height: 150px;
+    fill: $cyprus;
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+  }
+
+  &__item-icon {
+    margin-bottom: 30px;
+  }
+
+  &__item-text {
+    color: #4c4c4c;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2;
+    padding-right: 30%;
+  }
+
+}

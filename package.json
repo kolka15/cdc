@@ -10,7 +10,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "global": "^4.3.2"
+    "global": "^4.3.2",
+    "swiper": "^4.5.0",
+    "svg4everybody": "^2.1.9"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
@@ -35,7 +37,6 @@
     "gulp-svg-sprite": "^1.5.0",
     "gulp-webpack": "^1.5.0",
     "gulp.spritesmith": "^6.9.0",
-    "svg4everybody": "^2.1.9",
     "uglifyjs-webpack-plugin": "^1.2.7",
     "webpack": "^4.16.2",
     "webpack-bundle-analyzer": "^2.13.1",

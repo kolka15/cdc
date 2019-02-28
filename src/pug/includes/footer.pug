@@ -43,7 +43,7 @@ mixin linksList(title, link, isMain)
 
 footer.footer
     div.footer__upper-row
-        div.page-wrapper.row.p-0
+        div.page-wrapper.row.m-0
             div.col-12.col-md-3
                 div.footer__upper-row-item
                     <svg class="svg-mobile-phone-dims">
@@ -64,7 +64,7 @@ footer.footer
                     span.footer__upper-row-text Москва, пер. Водянковский, 24
     div.footer__main
         div.page-wrapper
-            div.row.p-0
+            div.row.m-0
                 div.col-12.col-md-3.mb-5.mb-md-0
                     each link in col1
                         +linksList(link.title, link.link, link.isMain)

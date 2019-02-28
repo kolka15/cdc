@@ -1,0 +1,59 @@
+mixin slide
+    div.swiper-slide
+        div.instruments__slide-extra-gap
+            div.instruments__item
+                <svg class="svg-tools-hat-dims instruments__item-icon">
+                <use xlink:href="/img/vector/sprite-symbol.svg#tools-hat"></use>
+                </svg>
+                p.instruments__item-text Лучшие практики
+
+            div.instruments__item
+                <svg class="svg-tools-settings-dims instruments__item-icon">
+                <use xlink:href="/img/vector/sprite-symbol.svg#tools-settings"></use>
+                </svg>
+                p.instruments__item-text Подбор решений и технологий
+
+            div.instruments__item
+                <svg class="svg-tools-arrows-dims instruments__item-icon">
+                <use xlink:href="/img/vector/sprite-symbol.svg#tools-arrows"></use>
+                </svg>
+                p.instruments__item-text Подбор решений и технологий
+
+            div.instruments__item
+                <svg class="svg-tools-settings-dims instruments__item-icon">
+                <use xlink:href="/img/vector/sprite-symbol.svg#tools-settings"></use>
+                </svg>
+                p.instruments__item-text Подбор решений и технологий
+
+div.instruments
+    div.page-wrapper
+        h2.title-1.text-center.instruments__title Инструменты
+        div.row.m-0
+            div.col-12.col-lg-5.text-center.text-lg-left.order-1.order-lg-0
+                img.instruments__side-img(src='/img/raster/phones.png', alt='phones')
+            div.col-12.col-lg-7.order-0.order-lg-1.mb-5.mb-lg-0
+                div.swiper-container.js-swiper-type-1.swiper-type-1
+                    div.swiper-wrapper
+                        +slide
+                        +slide
+                        +slide
+                        +slide
+                        +slide
+
+                    div.swiper-controls.d-none.d-lg-flex
+                        div.swiper-button-prev
+                            <svg class="svg-arrow-dims">
+                            <use xlink:href="/img/vector/sprite-symbol.svg#arrow"></use>
+                            </svg>
+
+                        div.swiper-button-next
+                            <svg class="svg-arrow-dims">
+                            <use xlink:href="/img/vector/sprite-symbol.svg#arrow"></use>
+                            </svg>
+
+                    div.swiper-pagination.d-lg-none
+
+
+
+
+
