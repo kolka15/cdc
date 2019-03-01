@@ -10,18 +10,61 @@
   left: 0;
   right: 0;
   background: url('/img/raster/shape-gray-triangle.png') 70% 70% no-repeat,
-          url('/img/raster/shape-yellow-circle.png') -20% -100% $java no-repeat;
-  transition: all .5s;
+  url('/img/raster/shape-yellow-circle.png') -20% -100% $java no-repeat;
+  transition: all .3s;
   z-index: 1000;
   padding-top: 130px;
   padding-bottom: 50px;
   transform: scaleX(0);
   transform-origin: right;
+
   &.active {
 
     transform: scaleX(1);
     visibility: visible;
     opacity: 1;
+  }
+  &__contacts {
+    padding-top: 20px;
+  }
+  &__contacts-row {
+    margin-bottom: 35px;
+  }
+  &__icon-phone {
+    width: 24px;
+    height: 33px;
+    fill: #000;
+  }
+
+  &__icon-mail {
+    width: 30px;
+    height: 22px;
+    fill: #000;
+  }
+
+  &__icon-location {
+    width: 21px;
+    height: 34px;
+    fill: #000;
+  }
+
+  &__contacts-text {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1;
+    margin-left: 20px;
+    @at-root {
+      a#{&} {
+        &:hover {
+          text-decoration: underline;
+          color: #fff;
+        }
+      }
+    }
+  }
+  &__contacts-wrapper {
+    margin-bottom: 60px;
   }
 }
 

@@ -108,7 +108,6 @@
 }
 
 .social-block {
-  margin-left: auto;
   @media screen and (max-width: 991px) {
     margin-left: 0;
   }
@@ -116,9 +115,32 @@
   &__social-link {
     fill: #fff;
     margin-left: 40px;
-
+    transition: all .2s;
     &:hover {
+      fill: #16cbc4;
+    }
+  }
 
+  &_nav {
+    .social-block__social-link {
+      margin-left: 0;
+      margin-right: 40px;
+    }
+    .svg-soc-fb-dims {
+      width: 14px;
+      height: 29px;
+    }
+    .svg-soc-tw-dims {
+      width: 29px;
+      height: 23px;
+    }
+    .svg-soc-vk-dims {
+      width: 33px;
+      height: 19px;
+    }
+    .svg-soc-in-dims {
+      width: 30px;
+      height: 30px;
     }
   }
 }
