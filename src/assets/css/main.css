@@ -5090,6 +5090,9 @@ button.swiper-pagination-bullet {
   padding-bottom: 50px;
   transform: scaleX(0);
   transform-origin: right; }
+  @media screen and (max-width: 767px) {
+    .overlay-nav {
+      padding-left: 5%; } }
   .overlay-nav.active {
     transform: scaleX(1);
     visibility: visible;

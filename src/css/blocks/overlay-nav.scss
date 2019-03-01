@@ -17,7 +17,9 @@
   padding-bottom: 50px;
   transform: scaleX(0);
   transform-origin: right;
-
+  @media screen and (max-width: 767px) {
+    padding-left: 5%;
+  }
   &.active {
 
     transform: scaleX(1);
