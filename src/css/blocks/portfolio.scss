@@ -14,8 +14,9 @@
     background-color: #efefef;
     position: relative;
     color: #1e1e1e;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     transition: all .3s;
+
     &:hover {
       color: #1e1e1e;
       text-decoration: none;
@@ -32,6 +33,7 @@
       .portfolio__block-caption {
         color: #dadada;
       }
+
       &:hover {
         color: #fff;
         background: $teal;
@@ -47,6 +49,7 @@
       .portfolio__block-caption {
         color: #dadada;
       }
+
       &:hover {
         color: #fff;
         background-color: $java;
@@ -62,6 +65,7 @@
       .portfolio__block-caption {
         color: #dadada;
       }
+
       &:hover {
         color: #fff;
         background-color: $flamingo;
@@ -77,6 +81,7 @@
       .portfolio__block-caption {
         color: #dadada;
       }
+
       &:hover {
         color: #fff;
         background-color: $cyprus;
@@ -84,12 +89,8 @@
       }
     }
 
-
-
-
-
-
   }
+
   &__block-overlay {
     position: fixed;
     top: 0;
@@ -109,6 +110,7 @@
     position: relative;
     z-index: 10;
   }
+
   &__inner-wrapper {
     padding: 40px 11% 30px 11%;
   }
@@ -127,15 +129,17 @@
   }
 
   &__block-caption {
-    color: #dadada;
+    color: #4e5051;
     font-weight: 400;
     font-size: 16px;
+    display: flex;
+    align-items: center;
   }
 
   &__caption-icon {
-    display: inline-block;
+
     vertical-align: middle;
-    margin-right: 20px;
+    margin-right: 10px;
     width: 42px;
     height: 42px;
     background: #ffffff url("/img/raster/eagle-gray-sm.png") center no-repeat;

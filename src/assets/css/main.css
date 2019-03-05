@@ -5183,7 +5183,7 @@ button.swiper-pagination-bullet {
     background-color: #efefef;
     position: relative;
     color: #1e1e1e;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     transition: all .3s; }
     .portfolio__block:hover {
       color: #1e1e1e;
@@ -5250,13 +5250,14 @@ button.swiper-pagination-bullet {
     line-height: 1.2;
     margin-bottom: 20px; }
   .portfolio__block-caption {
-    color: #dadada;
+    color: #4e5051;
     font-weight: 400;
-    font-size: 16px; }
+    font-size: 16px;
+    display: flex;
+    align-items: center; }
   .portfolio__caption-icon {
-    display: inline-block;
     vertical-align: middle;
-    margin-right: 20px;
+    margin-right: 10px;
     width: 42px;
     height: 42px;
     background: #ffffff url("/img/raster/eagle-gray-sm.png") center no-repeat;
