@@ -315,6 +315,7 @@ gulp.task('replace_html:docs', function () {
     return gulp.src(`${docs}/*.html`)
         .pipe(replace(`/assets`, `/${githubProjectName}/assets`))
         .pipe(replace(`/img`, `/${githubProjectName}/img`))
+        .pipe(replace(`href="/`, `href="/${githubProjectName}/`))
         .pipe(gulp.dest(`${docs}`))
 });
 
