@@ -3956,7 +3956,21 @@ html {
       background-color: #005359;
       color: #fff; }
   .button_no-bdr {
-    border: none; }
+    border: none;
+    color: #000; }
+    .button_no-bdr:hover {
+      background-color: #1bf5ed; }
+  .button_transparent-white {
+    background: transparent;
+    border-color: #fff;
+    color: #fff; }
+    .button_transparent-white:hover {
+      border-color: #1af2ea;
+      color: #1af2ea; }
+  .button_fit-content {
+    width: auto;
+    padding-left: 45px;
+    padding-right: 45px; }
 
 .eagle {
   background-image: url(/img/raster/sprite.png);
@@ -5345,5 +5359,21 @@ button.swiper-pagination-bullet {
   .promo__title {
     margin-bottom: 78px;
     text-align: center; }
+
+.solutions-header {
+  background: #1bbaae;
+  padding: 80px 0 100px; }
+  .solutions-header__title {
+    margin-bottom: 50px; }
+  .solutions-header__title-sm {
+    color: #00383c;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 20px; }
+  .solutions-header__text {
+    color: #00383c;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.4; }
 
 /*# sourceMappingURL=main.css.map */

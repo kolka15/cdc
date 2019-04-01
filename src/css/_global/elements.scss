@@ -58,6 +58,24 @@
 
   &_no-bdr {
     border: none;
+    color: #000;
+    &:hover {
+      background-color: #1bf5ed;
+    }
+  }
+  &_transparent-white {
+    background: transparent;
+    border-color: #fff;
+    color: #fff;
+    &:hover {
+      border-color: #1af2ea;
+      color: #1af2ea;
+    }
+  }
+  &_fit-content {
+    width: auto;
+    padding-left: 45px;
+    padding-right: 45px;
   }
 }
 

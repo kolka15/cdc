@@ -1,0 +1,19 @@
+.solutions-header {
+  background: $java;
+  padding: 80px 0 100px;
+  &__title {
+    margin-bottom: 50px;
+  }
+  &__title-sm {
+    color: $cyprus;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  &__text {
+    color: $cyprus;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.4;
+  }
+}
