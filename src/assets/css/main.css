@@ -3955,6 +3955,8 @@ html {
     .button_dark:hover {
       background-color: #005359;
       color: #fff; }
+  .button_no-bdr {
+    border: none; }
 
 .eagle {
   background-image: url(/img/raster/sprite.png);
@@ -4698,6 +4700,10 @@ button.swiper-pagination-bullet {
   height: 24px;
   border: 4px solid #eae73f;
   background: #efefef; }
+
+.call-back {
+  padding: 120px 0;
+  background: url(/img/raster/callback-square.png) 95% 450% no-repeat, url(/img/raster/callback-circle.png) 70% -120% no-repeat, url(/img/raster/callback-triangle.png) 10% 60% no-repeat #008b7a; }
 
 .digital {
   background: #00383c;
