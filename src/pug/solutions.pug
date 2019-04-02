@@ -1,23 +1,6 @@
 extends templates/inner-pages
 
 block inner-content
-    section.solutions-header.text-center
-        div.page-wrapper
-            h3.solutions-header__title-sm Национальный проект «Образование»
-            h2.title-1.title-1_white.solutions-header__title Федеральный проект<br>«Современная школа»
-            div.row.mb-5
-                div.col-4
-                    p.solutions-header__text
-                        | Сроки реализации<br>
-                        | 1.01.2019  - 31.12.2024
-                div.col-4
-                    p.solutions-header__text
-                        | Куратор федерального роекта:<br>
-                        | Т.В. Голикова
-                div.col-4
-                    p.solutions-header__text
-                        | Руководитель федерального проекта:<br>
-                        | К.Н. Никитин
-
-            div
-                a(href='#').button.button_transparent-white.button_fit-content Предложения по реализации задач проекта
+    div.solutions
+        include ./includes/solutions/solutions-header
+        include ./includes/solutions/search

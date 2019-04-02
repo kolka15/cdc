@@ -1,19 +1,31 @@
 .solutions-header {
-  background: $java;
   padding: 80px 0 100px;
+  background: url('/img/raster/shape-gray-triangle.png') 10% 0 no-repeat,
+  url('/img/raster/shape-yellow-circle.png') 130% 300px $java no-repeat;
+
   &__title {
     margin-bottom: 50px;
   }
+
   &__title-sm {
     color: $cyprus;
     font-size: 24px;
     font-weight: 400;
     margin-bottom: 20px;
   }
+
   &__text {
     color: $cyprus;
     font-size: 20px;
     font-weight: 400;
     line-height: 1.4;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .solutions-header {
+    &__text {
+      font-size: 30px;
+    }
   }
 }

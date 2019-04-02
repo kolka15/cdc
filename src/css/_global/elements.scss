@@ -16,7 +16,7 @@
 .button {
   border: 2px solid #1e1e1e;
   width: 280px;
-  height: 60px;
+  min-height: 60px;
   color: #1e1e1e;
   font-size: 16px;
   font-weight: 500;
@@ -28,6 +28,7 @@
   text-align: center;
   transition: all .2s;
   cursor: pointer;
+
   &:hover {
     color: #006971;
     text-decoration: none;
@@ -37,7 +38,7 @@
   @media screen and (max-width: 576px) {
     width: 250px;
     font-size: 26px;
-    height: 80px;
+    min-height: 80px;
   }
 
   &_mobile-full-width {
@@ -59,21 +60,28 @@
   &_no-bdr {
     border: none;
     color: #000;
+
     &:hover {
       background-color: #1bf5ed;
     }
   }
+
   &_transparent-white {
     background: transparent;
     border-color: #fff;
     color: #fff;
+
     &:hover {
       border-color: #1af2ea;
       color: #1af2ea;
     }
   }
+
   &_fit-content {
     width: auto;
+    height: auto;
+    min-height: 60px;
+    padding: 10px 0;
     padding-left: 45px;
     padding-right: 45px;
   }
@@ -108,4 +116,10 @@
 .svg-tools-settings-dims {
   width: 56px;
   height: 50px;
+}
+
+input[type='text'],
+input[type='search'],
+select {
+  width: 100%;
 }

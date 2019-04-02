@@ -3878,6 +3878,10 @@ html {
   width: 21px;
   height: 21px; }
 
+.svg-search-lens-dims {
+  width: 24px;
+  height: 24px; }
+
 .svg-soc-fb-dims {
   width: 10px;
   height: 20.721px; }
@@ -3925,7 +3929,7 @@ html {
 .button {
   border: 2px solid #1e1e1e;
   width: 280px;
-  height: 60px;
+  min-height: 60px;
   color: #1e1e1e;
   font-size: 16px;
   font-weight: 500;
@@ -3945,7 +3949,7 @@ html {
     .button {
       width: 250px;
       font-size: 26px;
-      height: 80px; } }
+      min-height: 80px; } }
   @media screen and (max-width: 576px) {
     .button_mobile-full-width {
       width: 100%; } }
@@ -3969,6 +3973,9 @@ html {
       color: #1af2ea; }
   .button_fit-content {
     width: auto;
+    height: auto;
+    min-height: 60px;
+    padding: 10px 0;
     padding-left: 45px;
     padding-right: 45px; }
 
@@ -4002,6 +4009,11 @@ html {
 .svg-tools-settings-dims {
   width: 56px;
   height: 50px; }
+
+input[type='text'],
+input[type='search'],
+select {
+  width: 100%; }
 
 body {
   font-family: "futura-pt", sans-serif;
@@ -4717,7 +4729,7 @@ button.swiper-pagination-bullet {
 
 .call-back {
   padding: 120px 0;
-  background: url(/img/raster/callback-square.png) 95% 450% no-repeat, url(/img/raster/callback-circle.png) 70% -120% no-repeat, url(/img/raster/callback-triangle.png) 10% 60% no-repeat #008b7a; }
+  background: url(/img/raster/callback-square.png) 95% 200px no-repeat, url(/img/raster/callback-circle.png) 70% -150px no-repeat, url(/img/raster/callback-triangle.png) 10% 60% no-repeat #008b7a; }
 
 .digital {
   background: #00383c;
@@ -5158,7 +5170,7 @@ button.swiper-pagination-bullet {
   left: 0;
   right: 0;
   background: url("/img/raster/shape-gray-triangle.png") 70% 70% no-repeat, url("/img/raster/shape-yellow-circle.png") -20% -100% #1bbaae no-repeat;
-  transition: all .3s;
+  transition: all .5s;
   z-index: 1000;
   padding-top: 130px;
   padding-bottom: 50px;
@@ -5360,9 +5372,30 @@ button.swiper-pagination-bullet {
     margin-bottom: 78px;
     text-align: center; }
 
+.search-block {
+  padding: 60px 0 30px; }
+  .search-block__input {
+    height: 50px;
+    border-width: 0 0 2px 0;
+    border-color: #cdcece;
+    background: transparent;
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    outline: none;
+    padding-right: 40px; }
+  .search-block__submit {
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    border: none;
+    background: transparent;
+    cursor: pointer; }
+
 .solutions-header {
-  background: #1bbaae;
-  padding: 80px 0 100px; }
+  padding: 80px 0 100px;
+  background: url("/img/raster/shape-gray-triangle.png") 10% 0 no-repeat, url("/img/raster/shape-yellow-circle.png") 130% 300px #1bbaae no-repeat; }
   .solutions-header__title {
     margin-bottom: 50px; }
   .solutions-header__title-sm {
@@ -5375,5 +5408,12 @@ button.swiper-pagination-bullet {
     font-size: 20px;
     font-weight: 400;
     line-height: 1.4; }
+
+@media screen and (max-width: 991px) {
+  .solutions-header__text {
+    font-size: 30px; } }
+
+.solutions {
+  background: #f4f5f5; }
 
 /*# sourceMappingURL=main.css.map */
